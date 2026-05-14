@@ -3,7 +3,18 @@ body {
 }
 
 #map {
-    width: 800px;
-    height: 600px;
+    width: 900px;
+    height: 650px;
     border: 2px solid black;
+}
+
+#question {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
