@@ -7,7 +7,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+    
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQW1ihy8g07OdwavUesKQl1n6SQK7bnKo&callback=initMap">
+    </script>
 
 </head>
 
@@ -15,15 +19,58 @@
 
     <h1>Map Quiz</h1>
 
-    <div id="question"></div>
+    <div id="container">
 
-    <div id="result"></div>
+        <div id="left-panel">
 
-    <div id="map"></div>
+            <div id="header-info">
+        
+                <div id="stats"></div>
+        
+                <button id="start-button">
+                    Start Quiz
+                </button>
+        
+            </div>
+        
+            <div id="game-ui">
+        
+                <ul id="question-list"></ul>
+        
+                <button id="restart-button"
+                    onclick="location.reload()">
+        
+                    Restart
+        
+                </button>
+        
+            </div>
+        
+        </div>
 
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQW1ihy8g07OdwavUesKQl1n6SQK7bnKo&callback=initMap">
-    </script>
+        <div id="map-section">
+
+            <div id="map-container">
+
+                <div id="top-bar">
+
+                    <div id="timer">
+                        Time: 0s
+                    </div>
+
+                    <div id="current-score">
+                        Score: 0 / 5
+                    </div>
+
+                </div>
+
+                <div id="map"></div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 

@@ -1,20 +1,134 @@
+/* ==================== GENERAL STYLES ==================== */
 body {
     font-family: Arial;
+    background-color: #e7dfc7;
+    margin: 15px;
 }
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* ==================== LAYOUT & CONTAINERS ==================== */
+#container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#left-panel {
+    width: 320px;
+    position: relative;
+    min-height: 550px;
+}
+
+#map-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================== LEFT PANEL ELEMENTS ==================== */
+#stats {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+#question-list {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 28px;
+}
+
+#question-list li {
+    margin-bottom: 4px;
+}
+
+#question-list p {
+    margin-top: 0;
+    margin-bottom: 28px;
+    margin-left: 30px;
+}
+
+/* ==================== BUTTONS ==================== */
+#start-button,
+#restart-button {
+    padding: 10px 18px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#start-button {
+    margin-top: 15px;
+}
+
+#restart-button {
+    display: none;
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    padding: 10px 18px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+/* ==================== MAP CONTAINER ==================== */
+#map-container {
+    position: relative;
+}
+
+/* ==================== EXTRA FEATURE: TOP BAR (TIMER & SCORE) ==================== */
+#top-bar {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 10;
+
+    display: flex;
+    gap: 40px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+}
+
+/* ==================== EXTRA FEATURE: TIMER ==================== */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ==================== EXTRA FEATURE: CURRENT SCORE ==================== */
+#current-score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ==================== MAP DISPLAY ==================== */
 #map {
-    width: 900px;
-    height: 650px;
+    width: 850px;
+    height: 550px;
     border: 2px solid black;
 }
 
-#question {
-    font-size: 28px;
-    margin-bottom: 10px;
+/* ==================== RESULT COLORS ==================== */
+.correct {
+    color: limegreen;
+    font-weight: bold;
 }
 
-#result {
-    font-size: 24px;
-    margin-bottom: 10px;
+.wrong {
+    color: red;
     font-weight: bold;
 }
